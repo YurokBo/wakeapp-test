@@ -7,7 +7,6 @@
                         v-for="(filterItem, index) in filterItems"
                         :key="filterItem"
                         :class="{isActive:filterItem.isActive,'active':activeIndex === index}"
-
                         @click="onClickBlock(index)"
 
                     >
@@ -38,10 +37,26 @@
             </div>
             <div class="games__block">
                 <ul class="games__block-list">
-                    <li class="games__block-item" v-for="game in gamesInfo" :key="game">
-                        <a href="#" class="games__block-link">
-                            <img :src=game.gamePic alt="game picture">
-                            {{ info[0].game_provider }}
+                    <!--<li class="games__block-item"
+                        v-for="game in gamesInfo"
+                        :key="game"
+                        :data-filter=" info.is_most_popular "
+                    >
+                        <a href="#" class="games__block-link"  v-for:="info in info" :key="info">
+                            &lt;!&ndash;<img :src=game.gamePic alt="game picture">&ndash;&gt;
+                            {{ info.application_name }}
+
+                        </a>
+                    </li>-->
+                    <li class="games__block-item"
+                        v-for:="info in info" :key="info"
+                        :data-filter=" [info.is_most_popular, info.is_appealing_to_children] "
+                        :id="info.internal_game_id"
+                    >
+                        <a href="#" class="games__block-link"  >
+                            <!--<img :src=game.gamePic alt="game picture">-->
+                            {{ info.application_name }}
+
                         </a>
                     </li>
                 </ul>
@@ -140,12 +155,10 @@
 
         },
 
-        created() {
-
+        created: function () {
             axios
                 .get('https://57d10932-44d0-4d3a-98a9-6dda8c67bdd3.mock.pstmn.io')
                 .then(response => (console.log(this.info = response.data)))
-
         }
     }
 </script>
