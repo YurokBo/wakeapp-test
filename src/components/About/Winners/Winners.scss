@@ -1,0 +1,74 @@
+.winners {
+  position: absolute;
+  left: 0;
+  bottom: 11px;
+}
+
+.winners__title {
+  font-size: 16px;
+  line-height: 1.24em;
+
+  margin-bottom: 17px;
+}
+
+.winners__list {
+  display: flex;
+  align-items: center;
+}
+
+.winners__item {
+  max-width: 130px;
+  width: 100%;
+  height: 148px;
+
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  
+}
+
+.winners__avatar {
+  max-width: 130px;
+  width: 100%;
+  height: 130px;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(6, 14, 42, 0) 0%, rgba(6, 14, 42, 0.26) 33.78%, rgba(6, 14, 42, 0.88) 85%, #060E2A 100%);
+  }
+}
+
+.winners__income {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.18em;
+  color: #F3B233;
+
+  z-index: 1;
+}
+
+.winners__name {
+  font-family: Montserrat-Regular;
+  font-weight: 400;
+  text-transform: initial;
+  color: #52586F;
+  text-align: right;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

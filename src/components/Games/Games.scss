@@ -1,0 +1,148 @@
+.games {
+  padding: 85px 0 300px;
+}
+
+.games__filter {
+  margin: 0 0 13px;
+}
+
+.games__filter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.games__filter-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 21px 0 5px;
+  cursor: pointer;
+
+  width: 164px;
+  height: 96px;
+  background-color: #0E152F;
+  position: relative;
+  transition: border .3s;
+
+  &:hover {
+   border-bottom: 2px solid #F3B233;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #F3B233;
+}
+
+.filter-icon {
+  margin-bottom: 13px;
+}
+
+.noLogo {
+  img {
+    display: none;
+  }
+}
+
+.games__providers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 26px;
+}
+
+.games__providers-list,
+.games__providers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.games__providers-item {
+  margin-right: 11.5px;
+
+}
+
+.games__providers-link {
+  width: 164px;
+  height: 50px;
+  padding: 5px 5px;
+
+  border: 2px solid rgba(58, 63, 85, 0.3);
+
+  transition: border .5s;
+
+  &:hover {
+    border-bottom-color: #F3B233;
+    border-top-color: #F3B233;
+    border-left-color: #F3B233;
+    border-right-color: #F3B233;
+  }
+}
+
+.games__providers-logo {
+  margin-right: 10px;
+}
+
+.more {
+  width: 49px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #f3b233;
+}
+
+.games__providers-form {
+  max-width: 170px;
+  width: 100%;
+
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  border: 2px solid rgba(58, 63, 85, 0.3);
+  background-color: transparent;
+  outline: none;
+
+  padding: 15px 17px 15px 49px;
+  color: inherit;
+
+  &::placeholder {
+    color: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.form__btn {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0 14px;
+  height: 100%;
+  
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  background-image: url(../../assets/img/search-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.games__block-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.games__block-item {
+  max-width: 194px;
+  height: 195px;
+  width: 100%;
+}
+

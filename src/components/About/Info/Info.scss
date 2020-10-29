@@ -1,0 +1,43 @@
+.info {
+  position: absolute;
+  right: 0;
+  bottom: 11px;
+}
+
+.info__list {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+
+  li {
+    margin-right: 68px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 75px;
+    }
+  }
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-bottom: 4px;
+
+    &:last-child {
+      color: #52586F;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.info__item-img {
+  margin-right: 13px;
+}
+
