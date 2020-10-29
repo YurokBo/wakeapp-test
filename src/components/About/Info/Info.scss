@@ -2,6 +2,10 @@
   position: absolute;
   right: 0;
   bottom: 11px;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 .info__list {

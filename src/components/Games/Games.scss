@@ -146,3 +146,39 @@
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .games__filter,
+  .games__providers-list {
+    display: none;
+  }
+
+  .games__providers-form {
+    max-width: 100%;
+  }
+
+  .form__btn {
+    left: 85%;
+  }
+
+  .form__input {
+    padding: 15px 49px 15px 17px;
+    font-size: 12px;
+  }
+
+  .games {
+    padding: 26px 0 26px;
+  }
+
+  .games__block-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .games__block-item {
+    max-width: 139px;
+    height: 139px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

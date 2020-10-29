@@ -10,9 +10,13 @@
                     <div class="about__text">
                         <p>€ 100 <strong>+</strong> 55 free spins</p>
                     </div>
-                    <button class="about__btn">
-                        Deposit now
-                    </button>
+                    <div class="about__btn-box">
+                        <a href="#" class="about__btn">
+                            Deposit now
+                        </a>
+                    </div>
+
+                    <Bar />
                 </div>
                 <Winners />
                 <Info />
@@ -24,9 +28,10 @@
 <script>
     import Winners from "./Winners/Winners";
     import Info from "./Info/Info";
+    import Bar from "./Bar/Bar";
     export default {
         name: "About",
-        components: {Info, Winners}
+        components: {Bar, Info, Winners}
     }
 </script>
 

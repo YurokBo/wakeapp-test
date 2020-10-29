@@ -72,3 +72,43 @@
   top: 0;
   left: 0;
 }
+
+@media (max-width: 576px) {
+  .winners {
+    position: relative;
+    display: block;
+    top: 0;
+
+    &__item {
+      max-width: 92px;
+      height: 117px;
+      margin-right: 6px;
+    }
+
+    &__title {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    &__avatar {
+      height: 92px;
+      .avatar {
+        width: 100%;
+      }
+
+      .status {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    &__income {
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 10px;
+      bottom: 10px;
+    }
+  }
+}
